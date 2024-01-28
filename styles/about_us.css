@@ -343,7 +343,7 @@ h1 {
 
 .fourth__subcontainers {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   justify-content: space-between;
   text-align: center;
 
@@ -362,4 +362,24 @@ h1 {
 
 .fourth__subcontainer__p {
   font-weight: 300;
+}
+
+/*-------------- fifth__container ------------*/
+
+.fifth__container {
+  background-color: #f7af1c;
+  padding: 60px 180px;
+  text-align: center;
+}
+
+.fifth__container span {
+  color: #02111b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #02111b;
+  color: white;
+  text-align: center;
 }
