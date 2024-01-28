@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/about_us.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <title>Quiénes somos</title>
 </head>
 <body>
-  <h2>Quiénes somos</h2>
+  <header class="header">
+    <a class="logo" href="./index.html">
+      <img src="../img/logo_emci.png" alt="logo">
+    </a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class='bx bx-x' id="close-icon" ></i>
+    </label>
+
+    <nav class="navbar">
+      <div class="navbar__left">
+        <ul>
+          <li><a href="./pages/program.html">Programa</a></li>
+          <li><a href="./pages/about_us.html">Quiénes somos</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar__right">
+        <ul>
+          <li><a href="./pages/students.html">
+            <button class="navbar__right__students">Estudiantes</button>
+          </a></li>
+          <li><a href="./pages/apply.html">
+            <button class="navbar__right__apply">Aplicar</button>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="first__container">
+      <div class="first__container__letter">
+        <h1>
+          <span>Juntos logramos tu título universitario a nivel nacional. termina tu tesis con nosotros.</span>
+        </h1>
+      </div>
+      <div class="graduated__woman">
+        <img src="../img/graduated_woman_2.jpg" alt="mujer graduada">
+        <!-- <img src="./img/graduated_woman.jpg" alt="mujer graduada"> -->
+      </div>
+    </section>
+
+    <br>
+    <div class="second__container">
+      <h2 class="second__container__h2">Nuestra historia</h2>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="bootstrap__subcontainer">
+              <div class="col-md-6">
+                  <img src="../img/graduated_woman_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-md-6 text-light">
+                  <h5 class="bootstrap__h5">Cómo nació Emci</h5>
+                  <p class="bootstrap__p">Emci nace con la misión de formar a los profesionales y lograr su título académico por la modalidad de tesis. Todo comenzo en Agosto del 2023.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="bootstrap__subcontainer">
+              <div class="col-md-6">
+                  <img src="../img/graduated_woman_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-md-6 text-light">
+                  <h5 class="bootstrap__h5">First slide label</h5>
+                  <p class="bootstrap__p">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="bootstrap__subcontainer">
+              <div class="col-md-6">
+                  <img src="../img/graduated_woman_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-md-6 text-light">
+                  <h5 class="bootstrap__h5">First slide label</h5>
+                  <p class="bootstrap__p">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
