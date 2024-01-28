@@ -17,6 +17,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: white;
 
   /* display: flex; */
   display: flex;
@@ -176,9 +177,10 @@
 }
 
 /*------------------ main ------------------*/
+/*------------- first_container ------------*/
 
 .main {
-  padding: 6rem 10%;
+  padding: 6rem 10% 0 10%;
 }
 
 .first__container img {
@@ -197,10 +199,11 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  flex-wrap: nowrap;
 }
 
 .first__container__letter {
-  padding: 125px 70px;
+  padding: 120px 30px;
   background-color: #f7af1c;
   border: 0;
   border-radius: 16px;
@@ -208,6 +211,8 @@
 
 .first__container__letter h1 span {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: 300;
 }
 
 h1 {
@@ -228,7 +233,7 @@ h1 {
 
 @media (max-width: 840px) {
   .main {
-    padding: 6rem 5%;
+    padding: 6rem 5% 0 5%;
   }
 
   .first__container {
@@ -243,4 +248,150 @@ h1 {
     padding: 30px 0;
     max-width: 34.4375rem;
   }
+}
+
+/*------------ second_container ------------*/
+.second__container {
+  padding: 20px 0;
+  margin: 0;
+  background-color: #f7f7f8;
+  color: #02111b;
+}
+
+.second__container__h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.second__subcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  flex-wrap: wrap;
+  padding: 1rem 5%;
+  
+}
+
+.second__subcontainer > div {
+  padding: 20px 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+/*------------- third_container -------------*/
+
+.third__container {
+  background-color: #f7af1c;
+}
+
+.third__container p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+
+  padding: 60px 150px;
+}
+
+/*------------ fourth_container ------------*/
+
+.fourth__container {
+  background-color: #02111b;
+  padding-top: 20px;
+}
+
+.fourth__container__subcontainer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fourth__container__h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.fourth__subcontainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 16px;
+  margin: 10px;
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;  
+}
+
+.fourth__subcontainer__a {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #f7af1c;
+  color: #f7f7f8;
+  text-align: center;
+}
+
+/*------------ fifth_container ------------*/
+
+.fifth__container {
+  padding: 20px 0;
+  background-color: #f7f7f8;
+  color: #02111b;
+}
+
+.fifth__container__h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fifth__container__p {
+  padding: 20px 250px;
+  text-align: center;
+}
+
+@media (max-width: 1086px) {
+  .fifth__container__p {
+    padding: 20px 150px;
+  }
+}
+
+.sixth__container {
+  padding: 20px 0 0 0;
+  color: #02111b;
+}
+
+.sixth__container__h2 {
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* position: relative; */
+}
+
+.sixth__container__span {
+  padding-top: 0px;
+  font-weight: 600;
+}
+
+.sixth__container__p {
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: #02111b;
+}
+
+footer p {
+  text-align: center;
+  color: white;
 }
