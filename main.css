@@ -206,6 +206,10 @@
   border-radius: 16px;
 }
 
+.first__container__letter h1 span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
   color: #02111b;
   padding: 0 30px;
