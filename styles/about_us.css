@@ -280,3 +280,86 @@ h1 {
   height: 100%;
   background-color: #f7af1c;
 }
+
+/*-------------- third__container ------------*/
+
+.third__container {
+  background-color: #02111b;
+  padding: 25px 20px;
+}
+
+.third__container__h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.third__container__p {
+  text-align: center;
+  font-weight: 300;
+  color: white;
+}
+
+.third__container hr {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin: 15px 0;
+}
+
+.third__container__teachers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.third__container__teacher {
+  background-color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.t__c__t__name,
+.t__c__t__specialty,
+.t__c__t__university {
+  text-align: center;
+  margin: 10px 0;
+  color: #02111b;
+  font-weight: 300;
+}
+
+/*-------------- fourth__container ------------*/
+
+.fourth__container {
+  padding: 20px 40px;
+  margin: 0;
+  color: #02111b;
+}
+
+.fourth__subcontainers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: space-between;
+  text-align: center;
+
+  gap: 20px;
+}
+
+.fourth__subcontainer {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.fourth__subcontainer__h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 15px;
+}
+
+.fourth__subcontainer__p {
+  font-weight: 300;
+}
