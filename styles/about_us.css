@@ -19,18 +19,15 @@
   width: 100%;
   background-color: white;
 
-  /* display: flex; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
   box-sizing: border-box;
 }
 
 .navbar {
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -38,12 +35,16 @@
 
 .navbar__left ul, .navbar__right ul {
   display: flex;
-  /* flex-direction: column; */
-  align-items: center; 
+  align-items: center;
   list-style: none;
-  /* margin: 0;
-  padding: 0;
-  width: 100%;  */
+}
+
+.navbar__left ul {
+  padding: 0 40px;
+}
+
+.navbar__right ul {
+  padding-left: 0;
 }
 
 .navbar__left ul li, .navbar__right ul li {
@@ -70,7 +71,7 @@
   border: 2px solid #02111b;
   border-radius: 8px;
   background-color: #f7f7f8;
-  cursor: pointer;
+  color: #02111b;
   transition: background-color 0.3s ease;
 }
 
@@ -83,9 +84,8 @@
   border: 2px solid #02111b;
   border-radius: 8px;
   background-color: #02111b;
-  color: white;
-  cursor: pointer;
-  transition: border 0.3s ease, background-color 0.3s ease, color 0.3 ease;
+  color: #fff;
+  transition: background-color 0.3 ease, border 0.3 ease, color 0.3 ease;
 }
 
 .navbar__right__apply:hover {
@@ -102,13 +102,9 @@
   position: absolute;
   right: 5%;
   font-size: 2.8rem;
-  color: #f7f7f8;
+  color: #02111b;
   cursor: pointer;
   display: none;
-
-  @media (max-width: 840px) {
-    display: inline-flex;
-  }
 }
 
 
@@ -153,7 +149,7 @@
   .navbar__left ul, .navbar__right ul {
     flex-direction: column;
   }
-  
+
   #check:checked~.navbar {
     height: 19.7rem;
   }
@@ -166,7 +162,6 @@
     transform: translateY(-50px);
     opacity: 0;
     transition: .3s ease;
-
   }
 
   #check:checked~.navbar a {
